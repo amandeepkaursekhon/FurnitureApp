@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:padding="10dp"
+        android:background="@color/shadow"
+        android:id="@+id/cardView">
+        <LinearLayout
+            android:orientation="vertical"
+            android:paddingLeft="10dp"
+            android:paddingTop="10dp"
+            android:paddingBottom="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+        <RelativeLayout
+
+            android:paddingRight="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+
+        <TextView
+            android:id="@+id/tvFullName"
+            android:textSize="18dp"
+            android:textColor="#5e425c"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="TextView" />
+
+            <ImageView
+                android:id="@+id/image_Editaddress"
+                android:layout_alignParentRight="true"
+                android:src="@drawable/ic_action_edit"
+                android:layout_width="50dp"
+                android:layout_height="wrap_content" />
+
+        </RelativeLayout>
+
+
+            <TextView
+                android:id="@+id/tvAddress"
+                android:textSize="18dp"
+                android:textColor="#5e425c"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="3dp"
+                android:text="TextView" />
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/tvCity"
+                android:text="TextView"
+                android:textSize="18dp"
+                android:textColor="#5e425c"
+                android:layout_marginTop="3dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                />
+
+                <TextView
+                    android:text="ON"
+                    android:layout_marginLeft="2dp"
+                    android:layout_marginTop="3dp"
+                    android:textSize="18dp"
+                    android:textColor="#5e425c"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:id="@+id/tvPostalcode"
+                    android:text="TextView"
+                    android:textSize="18dp"
+                    android:textAllCaps="true"
+                    android:textColor="#5e425c"
+                    android:layout_marginTop="3dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    />
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/tvState"
+                android:text="TextView"
+                android:textSize="18dp"
+                android:textColor="#5e425c"
+                android:layout_marginTop="3dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+
+            <!--<TextView
+               android:id="@+id/text_Editaddress"
+                android:text="Edit"
+                android:textSize="18dp"
+                android:textColor="#30152e"
+                android:layout_marginTop="3dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />-->
+
+
+
+        </LinearLayout>
+
+    </android.support.v7.widget.CardView>
+
+</LinearLayout>

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+    <item
+        android:id="@+id/action_home"
+        android:enabled="true"
+        android:title="Home"
+
+        app:showAsAction="always|withText"
+        android:icon="@drawable/ic_action_home">
+    </item>
+
+    <item
+        android:id="@+id/action_myAccount"
+        android:enabled="true"
+        android:title="Account"
+        app:showAsAction="always|withText"
+        android:icon="@drawable/account">
+    </item>
+
+
+    <item
+        android:id="@+id/action_myFavoutite"
+        android:enabled="true"
+        android:title="Favourite"
+        app:showAsAction="always|withText"
+        android:icon="@drawable/ic_action_favourite">
+    </item>
+
+
+
+    <item
+        android:id="@+id/action_sale"
+        android:enabled="true"
+        android:title="Sales"
+        app:showAsAction="always|withText"
+        android:icon="@drawable/sales">
+    </item>
+</menu>

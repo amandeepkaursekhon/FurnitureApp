@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "171582298294",
+    "firebase_url": "https://furniturestore-a8104.firebaseio.com",
+    "project_id": "furniturestore-a8104",
+    "storage_bucket": "furniturestore-a8104.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:171582298294:android:2420755a72df3ac0",
+        "android_client_info": {
+          "package_name": "com.example.capstone.furniturestore"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "171582298294-ld9rcq6fj8n29utogbg99uiip2e2045n.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.capstone.furniturestore",
+            "certificate_hash": "875b6df19ee19d3acd0975feb593afc9e17d7d54"
+          }
+        },
+        {
+          "client_id": "171582298294-6egskl3va0koeg9bk51u21r3tf6chi50.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDUVRFjxGF48ISLwNqbEOHOuLTvAOALj0A"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "171582298294-6egskl3va0koeg9bk51u21r3tf6chi50.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

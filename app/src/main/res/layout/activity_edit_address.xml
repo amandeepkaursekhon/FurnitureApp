@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.capstone.furniturestore.EditAddressActivity">
+
+    <include layout="@layout/toolbar"></include>
+
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="10dp"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp">
+
+        <TextView
+        android:text="Fullname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="15dp"
+        android:textColor="#000000"/>
+
+    <EditText
+        android:id="@+id/text_getuserfullname"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+        <TextView
+            android:text="Address"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="18dp"
+            android:textColor="#000000"/>
+
+        <EditText
+            android:id="@+id/text_getuserAddress"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:text="City"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="18dp"
+            android:textColor="#000000"/>
+
+        <EditText
+            android:id="@+id/text_getuserCity"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:text="State"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="18dp"
+            android:textColor="#000000"/>
+
+        <EditText
+            android:id="@+id/text_getuserState"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:text="Postal code"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="18dp"
+            android:textColor="#000000"/>
+
+        <EditText
+            android:id="@+id/text_getuserPostalcode"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:text="Phone Number"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="18dp"
+            android:textColor="#000000"/>
+
+        <EditText
+            android:id="@+id/text_getuserPhone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+
+
+        <Button
+        android:text="Update"
+        android:textSize="20dp"
+        android:textColor="#ffffff"
+        android:background="@color/colorPrimaryDark"
+        android:layout_gravity="center"
+        android:id="@+id/button_updateaddress"
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+        <Button
+            android:id="@+id/button_deleteaddress"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"
+            android:backgroundTint="@color/cardview_light_background"
+            android:backgroundTintMode="src_over"
+            android:text="Delete"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="20dp" />
+    </LinearLayout>
+
+
+    </android.support.v4.widget.NestedScrollView>
+
+
+</LinearLayout>
+
+
+

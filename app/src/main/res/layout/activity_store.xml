@@ -1,0 +1,281 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.capstone.furniturestore.StoreActivity">
+
+ <!-- <include layout="@layout/searchtoolbar"></include>
+-->
+
+    <FrameLayout
+        android:id="@+id/toolbar_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/searchtoolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="@color/colorPrimaryDark" />
+
+        <com.miguelcatalan.materialsearchview.MaterialSearchView
+            android:id="@+id/search_view"
+            android:searchSuggestAuthority="com.example.MySuggestionProvider"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="gone"/>
+    </FrameLayout>
+
+<LinearLayout
+    android:orientation="vertical"
+    android:visibility="gone"
+    android:id="@+id/search_listlayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ListView
+        android:id="@+id/list_Search"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    </ListView>
+
+
+
+</LinearLayout>
+
+
+    <android.support.design.widget.CoordinatorLayout
+
+        android:id="@+id/coordinator_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <android.support.v4.widget.NestedScrollView
+        android:fillViewport="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/searchtoolbar"
+
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center">
+                <TextView
+
+                    android:marqueeRepeatLimit="marquee_forever"
+                    android:scrollHorizontally="true"
+                    android:focusable="true"
+                    android:focusableInTouchMode="true"
+                    android:textColor="@color/colorPrimary"
+                    android:text="FREE SHIPPING Over CAD $75"
+                    android:layout_marginStart="2dp"
+                    android:textStyle="bold"
+                    android:textSize="18sp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/textviewmarquee"
+                    android:singleLine="true"
+                    />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <android.support.v4.view.ViewPager
+                    android:id="@+id/viewPager"
+                    android:layout_width="match_parent"
+                    android:layout_height="230dp"
+                    />
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:orientation="horizontal"
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp">
+
+
+
+                <TextView
+                    android:text="Shop by Department"
+                    android:layout_marginLeft="5dp"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="26sp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+
+
+            </LinearLayout>
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="10dp">
+
+
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/recycle_dept"
+                    android:layout_width="match_parent"
+
+                    android:layout_height="match_parent"
+                    android:clickable="true"
+                    android:clipToPadding="false"
+                    android:horizontalSpacing="20dp"
+                    android:verticalSpacing="20dp">
+
+                </android.support.v7.widget.RecyclerView>
+
+            </FrameLayout>
+
+
+
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp">
+
+                <TextView
+                    android:text="Featured Sale"
+                    android:textColor="@color/colorPrimary"
+                    android:layout_marginLeft="5dp"
+                    android:textSize="26sp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+            </LinearLayout>
+
+
+
+
+            <FrameLayout
+                android:layout_marginTop="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/recycle_sale"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:clickable="true"
+                    android:clipToPadding="false"
+                    android:horizontalSpacing="30dp"
+                    android:verticalSpacing="30dp">
+                </android.support.v7.widget.RecyclerView>
+
+            </FrameLayout>
+
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp">
+
+                <TextView
+                    android:text="New Arrival"
+                    android:textColor="@color/colorPrimary"
+                    android:layout_marginLeft="5dp"
+                    android:textSize="26sp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+            </LinearLayout>
+
+
+
+
+            <FrameLayout
+                android:layout_marginTop="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/recycle_newArrival"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:clickable="true"
+                    android:clipToPadding="false"
+                    android:horizontalSpacing="30dp"
+                    android:verticalSpacing="30dp">
+                </android.support.v7.widget.RecyclerView>
+
+            </FrameLayout>
+
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp">
+
+               <ImageView
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content" />
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+    </android.support.v4.widget.NestedScrollView>
+
+    <FrameLayout
+        android:id="@+id/container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior" />
+
+    <android.support.design.widget.BottomNavigationView
+            android:layout_marginTop="30dp"
+
+            android:layout_gravity="bottom"
+            android:id="@+id/bottom_navigation"
+            app:itemBackground="@color/white"
+            app:itemIconTint="@drawable/selector"
+            app:itemTextColor="@drawable/selector"
+            app:menu="@menu/bottom_navigation_menu"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+       <!-- <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+            <com.andremion.counterfab.CounterFab
+
+                android:id="@+id/fb_ShoppingBasket"
+                android:backgroundTint="@color/appTheme"
+                app:rippleColor="@color/appTheme"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="end|bottom"
+                android:src="@drawable/ic_action_cart"
+                android:layout_margin="16dp" />
+
+        </FrameLayout>-->
+
+
+    </android.support.design.widget.CoordinatorLayout>
+
+</LinearLayout>

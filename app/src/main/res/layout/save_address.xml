@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <include layout="@layout/toolbar"></include>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:paddingTop="10dp"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+    <TextView
+        android:id="@+id/textViewfullname"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Full name"
+        android:textSize="15dp"
+        android:textColor="#000000"/>
+
+    <EditText
+        android:id="@+id/editText_fullname"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="text"
+       android:hint="enter name" />
+
+    <TextView
+        android:id="@+id/textViewaddress"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Address"
+        android:textSize="15dp"
+        android:textColor="#000000"/>
+
+    <EditText
+        android:id="@+id/editText_address"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:hint="enter address" />
+
+    <TextView
+        android:id="@+id/textViewcity"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="City"
+        android:textSize="15dp"
+        android:textColor="#000000"/>
+
+    <EditText
+        android:id="@+id/editText_city"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="text"
+         android:hint="enter city" />
+
+    <TextView
+        android:id="@+id/textViewstate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Province"
+        android:textSize="15dp"
+        android:textColor="#000000"/>
+
+    <EditText
+        android:id="@+id/editText_state"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="text"
+        android:hint="enter state"/>
+
+
+            <TextView
+                android:id="@+id/textViewpostalcode"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Postal Code"
+                android:textSize="15dp"
+                android:textColor="#000000"/>
+
+            <EditText
+                android:id="@+id/editText_postalcode"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="textPassword"
+                android:hint="enter postal code"/>
+
+
+    <TextView
+        android:id="@+id/textViewphone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Phone number"
+        android:textSize="15dp"
+        android:textColor="#000000"/>
+
+    <EditText
+        android:id="@+id/editText_phonenumber"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="number"
+        android:hint="enter phone number" />
+
+    <Button
+        android:layout_marginTop="10dp"
+        android:textSize="20dp"
+        android:textColor="#ffffff"
+       android:background="#634561"
+        android:id="@+id/button_saveaddress"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="SAVE ADDRESS" />
+
+
+        </LinearLayout>
+</LinearLayout>
